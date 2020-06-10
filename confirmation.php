@@ -21,13 +21,11 @@
    $idReservation=$_GET["idReservation"];
    $queryConfirmation="select * from reservation r,vol v,client c where v.idvol=r.idvol and idReservation=$idReservation and c.idClient=r.idClient ";
    $result=$conn->query($queryConfirmation);
-   $data=$result->fetchAll(); 
+   $data=$result->fetchAll();
    ?>
    
 
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="connexion.php"><img src="footlogo.png" width="230" height="100" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -101,57 +99,129 @@
   </tr>
     </table>
 
-<footer>
- 	<div class="container-fluide">
- 		<div class="row">
- 			<div class="col-md-3 esp" >
- 				<img src="footlogo.png" style="margin: 1px 0px 0Px 50px;; height: 39%;width: 75%;">
- 				<p style="color: white;text-align: center">
- 				Si bien développer son entreprise est votre enjeu
- 				 pour les prochains mois, posez vous les questions 
-				 sur votre stratégie de développement !</p>
-				 <br>
-				 <div class="row-xl-6" id="iconeaws">	 
-				 <b href="#"><i class="fa fa-cc-visa" aria-hidden="true"style="color:#00828C;font-size: 40px"></i></b>
-				 <b href="#"><i class="fa fa-paypal" aria-hidden="true"style="color:#00828C;font-size: 40px"></i></b>
-				<b href="#"><i class="fa fa-cc-stripe" aria-hidden="true"style="color:#00828C;font-size: 40px"></i></b>
-				<b href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"style="color:#00828C;font-size: 40px"></i></b>
-				</div>
- 			</div>
- 			<div class="col-md-3 last">
-				 <h1>Follow US</h1>
-				 	<div class="icos">
-						<i class="fa fa-instagram" aria-hidden="true"style="color:#00828C;font-size: 40px"></i>
-						<b href="">Instagram</b>
-					 </div>
-					  <div class="icos">
-						<i class="fa fa-facebook-square" aria-hidden="true"style="color:#00828C;font-size: 40px"></i>
-						<b href="">Facebook</b>
-					  </div>
-					<div class="icos">
-					<i class="fa fa-twitter-square" aria-hidden="true"style="color:#00828C;font-size: 40px"></i>
-					<b href="">Twitter</b>
-					</div>
-                    
-					<div class="icos">
-					<i class="fa fa-youtube-play" aria-hidden="true"style="color:#00828C;font-size: 40px"></i>
-                    <b href="#">Youtube</b>
-					</div> 
-              	</div>
- 	               <div class="col-md-3 last">
-					<h1>Contact</h1>
- 			   <ul style="list-style-type: none;">
+ <!-- Footer -->
+ <footer  style="background-color: #000000;margin-top: 20px;">
 
-					<li class="fa fa-address-book" aria-hidden="true"style="color:#00828C;font-size: 40px;margin-left: -20px">&nbsp;&nbsp;</li>Addresse :</span><br>
-					  &nbsp;&nbsp;&nbsp; Mrroco Safi Code-Pin 20160
- 			   	<hr color="gray" style="width:86%;height:3px;margin-top: 19px;"><br>
- 			<i class="fa fa-phone-square" aria-hidden="true"style="color:#00828C;font-size: 40px;margin-left: -20px">&nbsp;&nbsp;</i>Phone :  +91 12345665.</li><br><br>
- 			   	<li><i class="fa fa-envelope-o" aria-hidden="true"style="color:#00828C;font-size: 40px;margin-left: -20px">&nbsp;&nbsp;</i>Email :  contact@gmail.com</li>
- 			   </ul>
- 			</div>
-	 </div>
- 	<div class="last_foo">
-            <abbr class="last">Copyrights © 2020. Developed with ❤️ by AGN & team</abbr> 
-        </div>
+<div style="background-color: #6351ce;">
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row py-4 d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <h6 class="mb-0">connecter vous dans les  médias sociaux</h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+        <!-- Facebook -->
+        <a class="fb-ic">
+          <i class="fab fa-facebook-f white-text mr-4"> </i>
+        </a>
+        <!-- Twitter -->
+        <a class="tw-ic">
+          <i class="fab fa-twitter white-text mr-4"> </i>
+        </a>
+        <!-- Google +-->
+        <a class="gplus-ic">
+          <i class="fab fa-google-plus-g white-text mr-4"> </i>
+        </a>
+        <!--Linkedin -->
+        <a class="li-ic">
+          <i class="fab fa-linkedin-in white-text mr-4"> </i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic">
+          <i class="fab fa-instagram white-text"> </i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+</div>
+
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-5">
+
+  <!-- Grid row -->
+  <div class="row mt-3">
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+      <!-- Content -->
+      <h6 class="text-uppercase font-weight-bold">gestion reservation vole</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background-color: #6351ce;">
+      <p>soyer le bienvenue dans notre applicaion web pour la gestion des vole</p>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">page</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background-color: #6351ce;">
+      <p>
+        <a href="index.php">home</a>
+      </p>
+      <p>
+        <a href="reservation.php">reservation</a>
+      </p>
+      <p>
+        <a href="confirmation.php">recupuration</a>
+      </p>
+    </div>
+ 
+   
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background-color: #6351ce;">
+      <p>
+        <i class="fas fa-home mr-3"></i> youcode safi</p>
+      <p>
+        <i class="fas fa-envelope mr-3"></i> vol@appweb.com</p>
+      <p>
+        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+      <p>
+        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3 bg-dark">© 2020 Copyright:
+  <a href="https://mdbootstrap.com/"> appvol.com</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  
+  
+
+  <!-- http://localhost/brief%20vol/reservationvol.php -->
 </body>
 </html>
